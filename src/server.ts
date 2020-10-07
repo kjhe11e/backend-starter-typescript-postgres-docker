@@ -24,6 +24,12 @@ app.get('/health', (req: any, res: any) => {
   res.send('healthy');
 });
 
+app.get('/users', async (req: any, res: any) => {
+  const users = await db('users');
+  console.log('users:', users);
+  res.send({users: users});
+});
+
 app.listen(port, () => {
   console.log(`app listening on port ${port}`);
 });
