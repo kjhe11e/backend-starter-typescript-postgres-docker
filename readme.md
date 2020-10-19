@@ -34,3 +34,4 @@ Reading resources:
 
 - https://mannhowie.com/aws-node
 
+- https://devhints.io/knex -- knex cheatsheet
